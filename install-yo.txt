@@ -1,0 +1,8 @@
+curl -sL https://deb.nodesource.com/setup_8.x -o nodesource_setup.sh
+chmod +x nodesource_setup.sh
+./nodesource_setup.sh
+npm install -g yo --alow-root
+npm install -g generator-aspnet
+sed -i -e '/rootCheck/d' "${NPM_CONFIG_PREFIX}/lib/node_modules/yo/lib/cli.js"
+
+yo aspnet
