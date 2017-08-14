@@ -7,9 +7,10 @@
   <head>
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
   </head>
   <body>
-    <div>
+    <div class="text-center">
       <h2>Hello (from the view)</h2>
       <h3>Greeting:</h3>
       <p>@ViewBag.Greeting</p><br />
@@ -17,7 +18,7 @@
         We are going to have an exciting party.<br />
         (To do: sell it better. Add pictures or something. )
       </p>
-      <a asp-action="RsvpForm">RSVP Now</a>
+      <a class="btn btn-primary" asp-action="RsvpForm">RSVP Now</a>
     </div>
   </body>
 </html>
